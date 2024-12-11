@@ -199,8 +199,64 @@
             </objects>
             <point key="canvasLocation" x="1628" y="-11"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Mpd-dG-cTA">
+            <objects>
+                <viewController id="8Rf-3q-Jbq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PrE-Cm-CMv">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Image 5" translatesAutoresizingMaskIntoConstraints="NO" id="DGe-tv-dP2">
+                                <rect key="frame" x="16" y="167" width="361" height="248"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="248" id="NFy-MN-WTD"/>
+                                    <constraint firstAttribute="width" constant="361" id="Z1d-tP-92a"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Thank You for your purchase!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="GAy-pG-2kT">
+                                <rect key="frame" x="0.0" y="423" width="393" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="38"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xa7-Ph-kfi">
+                                <rect key="frame" x="63" y="610" width="266" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Ouv-hg-AGY"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Continue Shopping"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JSm-Y6-Xd9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" red="0.25098040700000002" green="0.1686274707" blue="0.1607843041" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="JSm-Y6-Xd9" firstAttribute="bottom" secondItem="xa7-Ph-kfi" secondAttribute="bottom" constant="166" id="0sL-MZ-XdB"/>
+                            <constraint firstItem="GAy-pG-2kT" firstAttribute="leading" secondItem="JSm-Y6-Xd9" secondAttribute="leading" id="E7y-9A-MIb"/>
+                            <constraint firstItem="GAy-pG-2kT" firstAttribute="trailing" secondItem="JSm-Y6-Xd9" secondAttribute="trailing" id="IEQ-rf-i3z"/>
+                            <constraint firstItem="xa7-Ph-kfi" firstAttribute="top" secondItem="GAy-pG-2kT" secondAttribute="bottom" constant="59" id="JfI-Oa-8XI"/>
+                            <constraint firstItem="DGe-tv-dP2" firstAttribute="top" secondItem="JSm-Y6-Xd9" secondAttribute="top" constant="108" id="O9T-c5-55n"/>
+                            <constraint firstItem="JSm-Y6-Xd9" firstAttribute="bottom" secondItem="DGe-tv-dP2" secondAttribute="bottom" constant="403" id="ZPk-R3-Fs1"/>
+                            <constraint firstItem="xa7-Ph-kfi" firstAttribute="leading" secondItem="JSm-Y6-Xd9" secondAttribute="leading" constant="63" id="aL8-ag-BCE"/>
+                            <constraint firstItem="GAy-pG-2kT" firstAttribute="top" secondItem="DGe-tv-dP2" secondAttribute="bottom" constant="8" id="duW-hM-5aQ"/>
+                            <constraint firstItem="JSm-Y6-Xd9" firstAttribute="bottom" secondItem="GAy-pG-2kT" secondAttribute="bottom" constant="267" id="jbw-QB-Pk4"/>
+                            <constraint firstItem="JSm-Y6-Xd9" firstAttribute="trailing" secondItem="xa7-Ph-kfi" secondAttribute="trailing" constant="64" id="pbf-Hu-vbi"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J7R-j2-79n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2495.419847328244" y="-18.30985915492958"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Image 5" width="804" height="716"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
