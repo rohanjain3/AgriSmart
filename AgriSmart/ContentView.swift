@@ -1,24 +1,18 @@
-//
-//  ContentView.swift
-//  AgriSmart
-//
-//  Created by Rohan Jain on 26/05/25.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isLoggedIn = false  // ← controls whether to show MainTabView or WelcomeView
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        if isLoggedIn {
+            MainTabView()
+        } else {
+            WelcomeView()
         }
-        .padding()
     }
 }
 
 #Preview {
     ContentView()
 }
+
